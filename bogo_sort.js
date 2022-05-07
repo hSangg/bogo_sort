@@ -18,7 +18,7 @@ const bogoSort = (a, n) => {
   while (!isSorted(a, n)) suffle(a);
 };
 
-const a = [1, 6, 3, 5, 6, 3, 5, 3, 2, 4];
+const a = [10, 6, 3, 5, 6, 3, 5, 3, 2, 4];
 bogoSort(a, a.length);
 
 a.forEach((x) => console.log(x));

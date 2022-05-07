@@ -4,8 +4,11 @@ using namespace std;
 bool isSorted(int a[], int n)
 {
     while (--n >= 1)
+    {
+        cout << "n = " << n << "\n";
         if (a[n] < a[n - 1])
             return false;
+    }
     return true;
 }
 
@@ -29,7 +32,7 @@ void printArray(int a[], int n)
 
 int main()
 {
-    int a[] = {3, 2, 5, 1, 0, 4};
+    int a[] = {3, 2, 5, 1, 0, 4, 6};
     int n = sizeof a / sizeof a[0];
     bogoSort(a, n);
     cout << "Bogo Sort: \n";
